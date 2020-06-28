@@ -16,14 +16,15 @@ const OuterContainer = styled.div`
 `
 
 const Description = styled.p`
-  font-family: monospace;
+  font-family: 'IBM Plex Mono', monospace;
   padding: 0;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.4rem;
 `
 
 const NameHeader = styled.h1`
-  font-family: monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 3.5rem;
   margin-bottom: 0;
 `
