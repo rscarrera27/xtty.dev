@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `xtty.dev`,
-    subtitle: `Getting Ready...`,
+    subtitle: `\/dev\/xtty`,
     description: `xtty.dev`,
     author: `@NovemberOscar`,
   },

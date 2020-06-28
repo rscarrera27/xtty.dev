@@ -4,9 +4,13 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
 const Container = styled.div`
+  text-align: center;
+`
+
+const NameContainer = styled.div`
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; 
 `
 
 const OuterContainer = styled.div`
@@ -20,6 +24,14 @@ const OuterContainer = styled.div`
 const XttyImage = styled.img`
   margin: 0 0 0 0;
   padding-right: 1.2rem;
+`
+
+const Description = styled.p`
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
 `
 
 const NameHeader = styled.h1`
@@ -43,8 +55,11 @@ const LandingBio = () => (
     render={data => (
       <OuterContainer>
         <Container>
-          <XttyImage src="https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png" />
-          <NameHeader>{data.site.siteMetadata.title}</NameHeader>
+          <NameContainer>
+            <XttyImage src="https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png" />
+            <NameHeader>{data.site.siteMetadata.title}</NameHeader>
+          </NameContainer>
+          <Description>{data.site.siteMetadata.subtitle}</Description>
         </Container>
       </OuterContainer>
     )}
