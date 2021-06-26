@@ -50,7 +50,7 @@ const Layout = ({ children }) => (
             © {new Date().getFullYear()} 
             {` `}
             </p>
-            <GatsbyLink href="https://seonghyeon.dev">NovemberOscar</GatsbyLink>
+            <GatsbyLink href="https://twitter.com/_xtty_">xtty</GatsbyLink>
           </Footer>
         </Content>
       </>
